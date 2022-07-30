@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    margin: 6px;
+}
+
+/* Header */
+
+header{
+    background-color: #7030CC;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.header-container{
+    width: 1280px;
+    margin: auto;
+    padding: 50px 0 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 120px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li:not(:last-of-type){
+    margin-right: 25px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+nav ul li a.active{
+    color: #1BBCEF;
+    border-bottom: 2px solid #B259D9;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li:last-of-type{
+    background-color: #1BBCEF;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* Hero */
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.hero-content{
+    width: 70%;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.hero-content p{
+    color: #ffffff;
+    font-size: 15px;
+    opacity: .8;
+    margin: 25px 0;
+}
+
+.hero-content button{
+    background-color: #1BBCEF;
+    color: #ffffff;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.hero-img img{
+    transform: scale(1.1);
+}
+
+/* Data Analytics Section */
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.data-img img{
+    height: 550px;
+}
+
+.data-content{
+    padding-right: 80px;
+}
+
+.data-content h2{
+    font-size: 25px;
+}
+
+.content-items{
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+.single-item{
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.single-item i{
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.single-item:nth-of-type(1) i{
+    color: #F28A3F;
+}
+
+.single-item:nth-of-type(2) i{
+    color: #7ACA3A;
+}
+
+.single-item:nth-of-type(3) i{
+    color: #3F9CF2;
+}
+
+.single-item p{
+    font-size: 14px;
+    margin: 10px 0 15px;
+}
+
+/* Features Section */
+
+.features{
+    text-align: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 30px;
+}
+
+.features-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 30px; */
+    margin: 70px 0;
+}
+
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 250px;
+}
+
+.svg-wrapper{
+    margin: 30px 0;
+}
+
+.feature-box:nth-of-type(1) .svg-wrapper{
+    background-color: #FAEAEB;
+    height: 100px;
+    width: 100px;
+    line-height: 125px;
+    border-radius: 50%;
+}
+
+.feature-box:nth-of-type(1) svg{
+    height: 40px;
+    fill: #C78B8B;
+}
+
+.feature-box:nth-of-type(2) .svg-wrapper{
+    background-color: #FAEAEB;
+    height: 100px;
+    width: 100px;
+    line-height: 125px;
+    border-radius: 50%;
+}
+
+.feature-box:nth-of-type(2) svg{
+    height: 40px;
+    fill: #F28A3F;
+}
+
+.feature-box:nth-of-type(3) .svg-wrapper{
+    background-color: #E9F4F6;
+    height: 100px;
+    width: 100px;
+    line-height: 130px;
+    border-radius: 50%;
+}
+
+.feature-box:nth-of-type(3) svg{
+    height: 40px;
+}
+
+.feature-box:nth-of-type(4) .svg-wrapper{
+    background-color: #F2E7F5;
+    height: 100px;
+    width: 100px;
+    line-height: 125px;
+    border-radius: 50%;
+}
+
+.feature-box:nth-of-type(4) svg{
+    height: 40px;
+    fill: #A343AE;
+}
+
+.box-footer{
+    padding: 15px 0;
+}
+
+.box-footer.active{
+    background-color: #7030CC;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.box-footer strong{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box-footer p{
+    font-size: 11px;
+    width: 70%;
+    margin: auto;
+}
