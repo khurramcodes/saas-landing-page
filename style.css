@@ -53,23 +53,30 @@ nav .logo img{
     border-radius: 6px
 }
 
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li:not(:last-of-type){
-    margin-right: 25px;
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: center;
+    text-align: center;
 }
 
 nav ul li a{
     color: #ffffff;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a.active{
+nav ul li.active a{
     color: #1BBCEF;
     border-bottom: 2px solid #B259D9;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav ul li:not(.btn-trail) a:hover{
+    color: #1BBCEF;
+    border-bottom: 2px solid #B259D9;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -298,6 +305,14 @@ nav ul li:last-of-type{
 }
 
 @media screen and (max-width: 950px){
+    nav ul{
+        display: none;
+    }
+
+    .btn-mobileMenu i{
+        display: block;
+    }
+
     .hero{
         grid-template-columns: 1fr;
         justify-content: center;
@@ -327,16 +342,6 @@ nav ul li:last-of-type{
     
     .data-img img{
         min-height: 550px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    nav ul{
-        display: none;
-    }
-
-    .btn-mobileMenu i{
-        display: block;
     }
 }
 
